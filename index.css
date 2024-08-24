@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div {
+    flex: 1 0 20%; /* explanation below */
+    margin: 5px;
+    height: 100px;
+    border: 1px solid black;
+    padding: 25px;
+}
