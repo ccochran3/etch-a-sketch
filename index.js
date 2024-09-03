@@ -1,9 +1,17 @@
 const container = document.querySelector('.container');
 
+
+
 const addHoverToSquares = ( squares ) => {
+    const colors = ['red', 'green', 'blue', 'purple'];
+    
     squares.forEach(square => {
+
+        // Random number between 1 and 4 inclusive
+        const randomNum = Math.floor(Math.random() * (5));
+        const randomColor = colors[randomNum];
         square.addEventListener("mouseenter", () => {
-            square.style.backgroundColor = 'black';
+            square.style.backgroundColor = randomColor;;
         });
     });
 }
